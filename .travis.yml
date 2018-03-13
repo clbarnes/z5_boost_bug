@@ -23,7 +23,7 @@ before_install:
   - source activate new-env
 
 install:
-  - conda install -c cpape z5py
+  - conda install -c cpape -c conda-forge z5py
 
 script:
   - python -c "import z5py"
