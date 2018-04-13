@@ -24,7 +24,7 @@ before_install:
 
 install:
   - conda install -c cpape -c conda-forge z5py
-    #- conda install -c rdonnelly gcc-6=6.1.0
+  - conda install -c psi4 gcc-5
 
 script:
   - python test.py

@@ -10,7 +10,7 @@ logger.info('importing z5py')
 import z5py
 logger.info('imported z5py')
 
-file_path = datetime.now().isoformat() + '.n5'
+file_path = 'n5_file_{}.n5'.format(datetime.now().isoformat())
 
 logger.info('creating File')
 f = z5py.File(file_path, use_zarr_format=False)
